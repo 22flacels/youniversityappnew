@@ -1,0 +1,216 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Student advisor">
+	  <meta name="keywords" content="appunti, youniversity, appunti tor vergata, tor vergata, appunti università">
+  	<meta name="author" content="Cela Flavio">
+    <title>YOUNIVERSITY | Welcome</title>
+   	<link rel="stylesheet" href="/css/style1.css" />
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Varela+Round" />
+
+<!-- ManyChat -->
+<script src="//widget.manychat.com/204625867102632.js" async="async">
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132220243-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-132220243-1');
+</script>
+
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        
+              <ul class="nav nav-pills pull-right">
+            {{#if user}}
+              
+              <li role="presentation"><a href="/">Appunti</a></li>
+              <li role="presentation"><a href="/users/logout">Logout</a></li>
+            {{else}}
+              <li role="presentation"><a href="/users/login">Login</a></li>
+              <li role="presentation"><a href="/users/register">Register</a></li>
+            {{/if}}
+           </ul>
+           <div id="logo">
+          <h1><span class="highlight"><img src="/img/logoyou.png" width="120px" height="56px"></h1>
+		  
+        </div>
+		
+
+      </div>
+    </header>
+
+    <section id="showcase">
+      <div class="container">
+        <h1>APPUNTI</h1>
+		<p>Raccolta di appunti per i corsi di Ingegneria, Università di Roma Tor Vergata.</p>
+       
+		
+		<center><img src="/img/arrow.gif" width="150px"  height="100px" vspace="20px"  onClick="scrollWin1()"><center>
+      </div>
+    </section>
+
+
+	
+	
+	<section id="boxes" style="background-color:#D9D9D9">
+	<BR>
+     <font color="#737373"> <h1> Come funziona <font color="#ff6b18">YOU</font><font color="#00b2af ">NIVERSITY</font>? </h1> 
+	  <div class="container">
+	  
+        <div class="box" >
+          <img src="./img/condividi.png">
+          <font color="#737373"><h3>CONDIVIDI</h3> </font>
+          <p>Segui le indicazioni sul nostro gruppo Facebook! Il nostro chatbot ti spiegherà come cndividere e guadagnare!</p>
+        </div>
+        <div class="box">
+          <img src="./img/consulta.png">
+          <font color="#737373"> <h3>CONSULTA</h3></font>
+          <p>Studia gratis sugli appunti condivisi dagli altri utenti. Qui sotto troverai la lista degli appunti disponibili!</p>
+        </div>
+       
+		<div class="box">
+          <img src="./img/stampa.png">
+           <font color="#ff6b18"><h3>STAMPA</h3></font>
+          <p>Richiedi una copia cartacea al nostro chatbot su Facebook! Ti verrà consegnata in facoltà il prima possibile </p>
+		  </font>
+        </div>
+      </div>
+    </section>
+	
+	
+	<section id="appunti">
+ <br><h1> <font color="#ff6b18"> Cerca qui sotto gli appunti che ti servono! </font></h1>
+ <h2> Puoi fare la ricerca in base alla materia o al professore!</h2>
+		<div id="container"	>
+
+  
+    <center><input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Cerca.." title="Type in a category"></center>
+    <ul id="myMenu">
+      <li><a target="_blank" href="https://www.mokazine.com/read/flacels/impianti-industriali"><img width="100" src="https://s3.mokazine.com/moka/21045/magazine/impianti-industriali-cover.jpg?r=1543324596" style="cursor:pointer; border:0"><p>Materia:Impianti industriali</p><p>Prof.: Schiraldi</p><p> Federico Donati</p> <p>Voto: 29</p></a><button onclick="scrollWin()">Stampa: 10€</button></li> 
+      <li><a target="_blank" href="https://www.mokazine.com/read/flacels/fondamenti-marketing"><img width="100" src="https://s3.mokazine.com/moka/20926/magazine/fondamenti-marketing-cover.jpg?r=1542396213" style="cursor:pointer; border:0"><p>Materia:Fondam. di Marketing</p><p>Prof.: D'Angelo</p><p> Filippo Basili</p><p> Voto: 30</p></a><button onclick="scrollWin()">Stampa: 10€</button></li>
+      <li><a target="_blank" href="https://www.mokazine.com/read/flacels/analisi-2"><img width="100" src="https://s3.mokazine.com/moka/21022/magazine/analisi-2-cover.jpg?r=1543079782" style="cursor:pointer; border:0">                      <p>Materia:Analisi Matematica 2</p><p>Prof.: Sinestrari</p><p> Edoardo Moretti</p> <p>Voto: 30</p></a><button onclick="scrollWin()">Stampa: 9€</button></li>
+      <li><a target="_blank" href="https://www.mokazine.com/read/flacels/fisica-tecnica"><img width="100" src="https://s3.mokazine.com/moka/20959/magazine/fisica-tecnica-cover.jpg?r=1542738526" style="cursor:pointer; border:0"><p>            Materia: Fisica Tecnica teo.</p><p>Prof.: Corasaniti</p><p> Edoardo Moretti</p> <p>Voto: 30L</p></a><button onclick="scrollWin()">Stampa: 6€</button></li>
+      <li><a target="_blank" href="https://www.mokazine.com/read/flacels/analisi-1"><img width="100" src="https://s3.mokazine.com/moka/20954/magazine/analisi-1-cover.jpg?r=1542734983" style="cursor:pointer; border:0"><p>                      Materia:Analisi 1 teo. eser.</p><p>Prof.: Tarantello</p><p> Edoardo Moretti</p> <p>Voto: 28</p></a><button onclick="scrollWin()">Stampa: 5€</button></li>
+      <li><a target="_blank" href="https://www.mokazine.com/read/flacels/fisica-2"><img width="100" src="https://s3.mokazine.com/moka/20953/magazine/fisica-2-cover.jpg?r=1542733845" style="cursor:pointer; border:0"><p>                        Materia: Fisica 2 teo. eser.</p><p>Prof.: Schunck</p><p> Edoardo Moretti</p> <p>Voto: 29</p></a><button onclick="scrollWin()">Stampa: 5€</button></li>
+      <li><a target="_blank" href="https://www.mokazine.com/read/flacels/gestione-aziendale-1"><img width="100" src="https://s3.mokazine.com/moka/21046/magazine/gestione-aziendale-1-cover.jpg?r=1543334657" style="cursor:pointer; border:0"><p>Materia: GA 1 + 2 DOM. ORALE</p><p>Prof.: Levialdi</p><p> Flavio Cela</p> <p>Voto: 27</p></a><button onclick="scrollWin()">Stampa: 3€</button></li>
+
+	  <li><a target="_blank" href="https://www.mokazine.com/read/flacels/ricerca-operativa-1"><img width="100" src="https://s3.mokazine.com/moka/21048/magazine/ricerca-operativa-1-cover.jpg?r=1543335164" style="cursor:pointer; border:0"><p>  Materia: Ricerca operativa 1</p><p>Prof.: Giordani</p><p> Simone Moranti</p> <p>Voto: 27</p></a><button onclick="scrollWin()">Stampa: 3€</button></li>
+	  <li><a target="_blank" href="https://www.mokazine.com/read/flacels/elettronica"><img width="100" src="https://s3.mokazine.com/moka/21050/magazine/elettronica-cover.jpg?r=1543335535" style="cursor:pointer; border:0"><p>                  Materia: Fon. di Elettronica</p><p>Prof.: Martinelli</p><p> Lorenzo Alivernini</p> <p>Voto: 25</p></a><button onclick="scrollWin()">Stampa: 4€</button></li>
+	  <li><a target="_blank" href="https://www.mokazine.com/read/flacels/ricerca-operativa-2"><img width="100" src="https://s3.mokazine.com/moka/21051/magazine/ricerca-operativa-2-cover.jpg?r=1543335648" style="cursor:pointer; border:0"><p>  Materia: Ricerca operativa 2</p><p>Prof.: Caramia</p><p> Simone Moranti</p> <p>Voto: 27</p></a><button onclick="scrollWin()">Stampa: 3€</button></li>
+      <li><a target="_blank" href="https://www.mokazine.com/read/flacels/elettrotecnica"><img width="100" src="https://s3.mokazine.com/moka/21052/magazine/elettrotecnica-cover.jpg?r=1543336120" style="cursor:pointer; border:0"><p>            Materia: Elettrotecnica teo.</p><p>Prof.: Sargeni </p><p> Lorenzo Alivernini</p> <p>Voto: 25</p></a><button onclick="scrollWin()">Stampa: 3€</button></li>
+      <li><a target="_blank" href="https://www.mokazine.com/read/flacels/fisica-1"><img width="100" src="https://s3.mokazine.com/moka/21064/magazine/fisica-1-cover.jpg?r=1543421402" style="cursor:pointer; border:0"><p>                        Materia: Fisca 1 teo. eserc.</p><p>Prof.: Pizzoferrato </p><p> Lorenzo Alivernini</p> <p>Voto: 27</p></a><button onclick="scrollWin()">Stampa: 15€</button></li>   
+	  <li><a target="_blank" href="https://www.mokazine.com/read/flacels/fisica-2-aliv"><img width="100" src="https://s3.mokazine.com/moka/21065/magazine/fisica-2-aliv-cover.jpg?r=1543422077" style="cursor:pointer; border:0"><p>              Materia: Fisca 2 teo. eserc.</p><p>Prof.: Medaglia </p><p> Lorenzo Alivernini</p> <p>Voto: 26</p></a><button onclick="scrollWin()">Stampa: 11€</button></li>   
+	  <li><a target="_blank" href="https://www.mokazine.com/read/flacels/braides-analisi-2"><img width="100" src="https://s3.mokazine.com/moka/21076/magazine/braides-analisi-2-cover.jpg?r=1543594722" style="cursor:pointer; border:0"><p>      Materia:Analisi matematica 2</p><p>Prof.: Braides </p><p> Filippo Basili</p> <p>Voto: 27</p></a><button onclick="scrollWin()">Stampa: 9€</button></li>   
+	  <li><a target="_blank" href="https://www.mokazine.com/read/flacels/econonomia-applicata"><img width="100" src="https://s3.mokazine.com/moka/21093/magazine/econonomia-applicata-cover.jpg?r=1543607186" style="cursor:pointer; border:0"><p>Materia:Economia App. I. 1+2</p><p>Prof.: Costa </p><p> Simone Moranti</p> <p>Voto: 25</p></a><button onclick="scrollWin()">Stampa: 7€</button></li>  
+	  <li><a target="_blank" href="https://www.mokazine.com/read/flacels/chimica"><img width="100" src="https://s3.mokazine.com/moka/21095/magazine/chimica-cover.jpg?r=1543608513" style="cursor:pointer; border:0"><p>                          Materia:Fondamen. di Chimica</p><p>Prof.: Licoccia </p><p> Edoardo Moretti</p> <p>Voto: 30</p></a><button onclick="scrollWin()">Stampa: 5€</button></li>  
+	  <li><a target="_blank" href="https://www.mokazine.com/read/flacels/analisi-2-mora"><img width="100" src="https://s3.mokazine.com/moka/21101/magazine/analisi-2-mora-cover.jpg?r=1543661934" style="cursor:pointer; border:0"><p>            Materia:Analisi 2 teo. eser.</p><p>Prof.: Sinestrari </p><p> Edoardo Moretti</p> <p>Voto: 30L</p></a><button onclick="scrollWin()">Stampa: 9€</button></li> 
+	  <li><a target="_blank" href="https://www.mokazine.com/read/flacels/fisica-verona"><img width="100" src="https://s3.mokazine.com/moka/21102/magazine/fisica-verona-cover.jpg?r=1543662334" style="cursor:pointer; border:0"><p>              Materia: Fisica 1 teo. eser.</p><p>Prof.: Verona  </p><p> Emanuele Fegatelli</p> <p>Voto: 26</p></a><button onclick="scrollWin()">Stampa: 9€</button></li> 
+	  <li><a target="_blank" href="https://www.mokazine.com/read/flacels/geometria-mora"><img width="100" src="https://s3.mokazine.com/moka/21103/magazine/geometria-mora-cover.jpg?r=1543662598" style="cursor:pointer; border:0"><p>            Materia: Fondamen. Geometria</p><p>Prof.: Tovena</p><p> Edoardo Moretti</p> <p>Voto: 30</p></a><button onclick="scrollWin()">Stampa: 6€</button></li>    
+	  <li><a target="_blank" href="https://www.mokazine.com/read/flacels/macchine-mora"><img width="100" src="https://s3.mokazine.com/moka/21104/magazine/macchine-mora-cover.jpg?r=1543662708" style="cursor:pointer; border:0"><p>              Materia: Macchine teo. eser.</p><p>Prof.: Cordiner</p><p> Edoardo Moretti</p> <p>Voto: 30</p></a><button onclick="scrollWin()">Stampa: 3€</button></li>
+      <li><a target="_blank" href="https://www.mokazine.com/read/flacels/scienza-delle-costruzioni"><img width="100" src="https://s3.mokazine.com/moka/21105/magazine/scienza-delle-costruzioni-cover.jpg?r=1543663134" style="cursor:pointer; border:0"><p>Materia:Scienza delle costr.</p><p>Prof.: Bisegna</p><p> Edoardo Moretti</p> <p>Voto: 29</p></a><button onclick="scrollWin()">Stampa: 11€</button></li>    
+	  <li><a target="_blank" href="https://www.mokazine.com/read/flacels/analisi-1-tarantello"><img width="100" src="https://s3.mokazine.com/moka/21106/magazine/analisi-1-tarantello-cover.jpg?r=1543663329" style="cursor:pointer; border:0"><p>Materia:Analisi matematica 1</p><p>Prof.: Tarantello</p><p> Edoardo Moretti</p> <p>Voto: 30</p></a><button onclick="scrollWin()">Stampa: 5€</button></li>
+	  <li><a target="_blank" href="https://www.mokazine.com/read/flacels/elettrotecnica-fega"><img width="100" src="https://s3.mokazine.com/moka/21107/magazine/elettrotecnica-fega-cover.jpg?r=1543663502" style="cursor:pointer; border:0"><p>  Materia: Elettrotecnica teo.</p><p>Prof.: Costantini</p><p> Emanuele Fegatelli</p> <p>Voto: 25</p></a><button onclick="scrollWin()">Stampa: 3€</button></li>
+	  <li><a target="_blank" href="https://www.mokazine.com/read/flacels/fisica-tecnica-mora"><img width="100" src="https://s3.mokazine.com/moka/21109/magazine/fisica-tecnica-mora-cover.jpg?r=1543663969" style="cursor:pointer; border:0"><p>  Materia: Fisica tecnica teo.</p><p>Prof.: Corasaniti</p><p> Edoardo Moretti</p> <p>Voto: 30</p></a><button onclick="scrollWin()">Stampa: 6€</button></li>
+	  <li><a target="_blank" href="https://www.mokazine.com/read/flacels/tecnologia-dei-materiali"><img width="100" src="https://s3.mokazine.com/moka/21110/magazine/tecnologia-dei-materiali-cover.jpg?r=1543664140" style="cursor:pointer; border:0"><p>Materia:Tecnologia dei mater.</p><p>Prof.: Corasaniti</p><p> Edoardo Moretti</p> <p>Voto: 30</p></a><button onclick="scrollWin()">Stampa: 4€</button></li>
+	  <li><a target="_blank" href="https://www.mokazine.com/read/flacels/probavilita"><img width="100" src="https://s3.mokazine.com/moka/21111/magazine/probavilita-cover.jpg?r=1543664368" style="cursor:pointer; border:0"><p>                  Materia: Probabilità e stat.</p><p>Prof.: Torti</p><p> Edoardo Moretti</p> <p>Voto: 30</p></a><button onclick="scrollWin()">Stampa: 6€</button></li>
+	  <li><a target="_blank" href="https://www.mokazine.com/read/flacels/meccanica-solidi"><img width="100" src="https://s3.mokazine.com/moka/21112/magazine/meccanica-solidi-cover.jpg?r=1543664611" style="cursor:pointer; border:0"><p>        Materia:Meccanica dei solidi</p><p>Prof.: Bisegna</p><p> Edoardo Moretti</p> <p>Voto: 28</p></a><button onclick="scrollWin()">Stampa: 6€</button></li>
+	  <li><a target="_blank" href="https://www.mokazine.com/read/flacels/disegno"><img width="100" src="https://s3.mokazine.com/moka/21113/magazine/disegno-cover.jpg?r=1543664703" style="cursor:pointer; border:0"><p>                          Materia: Disegno teo. eserc.</p><p>Prof.: D'auria</p><p> Edoardo Moretti</p> <p>Voto: 29</p></a><button onclick="scrollWin()">Stampa: 2€</button></li>
+	  <li><a target="_blank" href="https://www.mokazine.com/read/flacels/archi-tec"><img width="100" src="https://s3.mokazine.com/moka/21115/magazine/archi-tec-cover.jpg?r=1543668337" style="cursor:pointer; border:0"><p>                      Materia: Architettura tecni.</p><p>Prof.: Capomolla</p><p> Edoardo Moretti</p> <p>Voto: 28</p></a><button onclick="scrollWin()">Stampa: 4€</button></li>
+	  <li><a target="_blank" href="https://www.mokazine.com/read/flacels/geotecn"><img width="100" src="https://s3.mokazine.com/moka/21114/magazine/geotecn-cover.jpg?r=1543668185" style="cursor:pointer; border:0"><p>                          Materia: Geotecnica teo. es.</p><p>Prof.: Federico</p><p> Edoardo Moretti</p> <p>Voto: 28</p></a><button onclick="scrollWin()">Stampa: 4€</button></li>
+	  <li><a target="_blank" href="https://www.mokazine.com/read/flacels/trasporto"><img width="100" src="https://s3.mokazine.com/moka/21117/magazine/trasporto-cover.jpg?r=1543669304" style="cursor:pointer; border:0"><p>                      Materia: Sistemi di traspor.</p><p>Prof.: Crisalli</p><p> Edoardo Moretti</p> <p>Voto: 30L</p></a><button onclick="scrollWin()">Stampa: 2€</button></li>
+	  <li><a target="_blank" href="https://www.mokazine.com/read/flacels/fisica-i"><img width="100" src="https://s3.mokazine.com/moka/21303/magazine/fisica-i-cover.jpg?r=1544449986" style="cursor:pointer; border:0"><p>                        Materia: Fisica 1 teo. eser.</p><p>Prof.: Zammit</p><p> Francesco Lestini</p> <p>Voto: 30</p></a><button onclick="scrollWin()">Stampa: 7€</button></li>                        
+      <li><a target="_blank" href="https://www.mokazine.com/read/flacels/fisica-2-lestini"><img width="100" src="https://s3.mokazine.com/moka/21305/magazine/fisica-2-lestini-cover.jpg?r=1544454259" style="cursor:pointer; border:0"><p>        Materia: Fisica 2 teo. eser.</p><p>Prof.: Balestrino</p><p>Francesco Lestini </p><p> Voto: 30 </p></a><button onclick="scrollWin()">Stampa: 6€</button></li>
+      <li><a target="_blank" href="https://www.mokazine.com/read/flacels/metodi-matematici-lestini"><img width="100" src="https://s3.mokazine.com/moka/21308/magazine/metodi-matematici-lestini-cover.jpg?r=1544460977" style="cursor:pointer;border:0"><p> Materia: Metodi matematici .</p><p>Prof.: Sorrentino</p><p>Francesco Lestini </p><p> Voto: 26 </p></a><button onclick="scrollWin()">Stampa: 6€</button></li>
+	  <li><a target="_blank" href="https://www.mokazine.com/read/flacels/analisi-1--isola-lestini"><img width="100" src="https://s3.mokazine.com/moka/21327/magazine/analisi-1--isola-lestini-cover.jpg?r=1544519034" style="cursor:pointer; border:0"><p>  Materia:Analisi matematica 1</p><p>Prof.: Isola</p><p>Francesco Lestini </p><p> Voto: 26 </p></a><button onclick="scrollWin()">Stampa: 6€</button></li>
+	  <li><a target="_blank" href="https://www.mokazine.com/read/flacels/elettrotecnica-mora"><img width="100" src="https://s3.mokazine.com/moka/21475/magazine/elettrotecnica-mora-cover.jpg?r=1546776729" style="cursor:pointer; border:0"><p>            Materia: Elettrotecnica teo.</p><p>Prof.: Susi</p><p>Edoardo Moretti</p><p> Voto: 30 </p></a><button onclick="scrollWin()">Stampa: 6€</button></li>
+	
+	
+	
+	
+	</ul>
+
+		</div>   
+		     
+</div> 
+   
+      </div>
+    </section>
+	
+
+
+	
+	
+	
+	
+	
+
+	
+	<section id="boxes2">
+      <div class="container">
+       <center><b><h3>Hai trovato gli appunti che vorresti stampare?</h3></b>
+    	
+         <b><p>Clicca l'icona <img src="/img/fammisapere.png"> qui sotto e chiedi al chatbot di portarti la stampa richiesta! </p></b>
+        <h6><br>
+       <a href="https://youniversity-lp.herokuapp.com/">Registrati</a> subito e riceverai il pdf con le domande d'esame dei tuoi professori!
+	   <br> Non perdere tempo! Il prossimo esame si avvicina!
+	  </h6></center>
+      </div>
+	   
+    </section>
+
+  
+
+
+
+	
+	
+	
+	  </div>
+	  
+	<div class="mcwidget-embed" data-widget-id="3942724"></div>
+	  
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("mySearch");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myMenu");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>  
+	
+<script>
+function scrollWin1() {
+    window.scrollTo(0, 600);
+}
+</script>	  
+
+<script>
+function scrollWin() {
+    window.scrollTo(0, 9398600);
+}
+</script>	 
+
+
+
+</body>
+  </body>
+</html> 
